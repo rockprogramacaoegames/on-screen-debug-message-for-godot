@@ -1,2 +1,9 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
+
+# Exclude everything except addons from zip downloads.
+# Exclude everything
+*                       export-ignore
+# Un-exclude addons
+/addons                -export-ignore
+/addons/**             -export-ignore
