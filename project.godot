@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="On Screen Debug Message"
+run/main_scene="uid://bne4mlj5mptr"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+OnScreenDebugMessage="*res://addons/on_screen_debug_message/scenes/on_screen_debug_message_layer.tscn"
 
 [editor_plugins]
 
