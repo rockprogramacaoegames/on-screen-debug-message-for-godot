@@ -3,6 +3,9 @@ extends CanvasLayer
 @onready var container: VBoxContainer = %MessagesContainer
 
 func add_message(message: String, duration: float = 2.0, color: Color = Color.WHITE, index: int = 0) -> void:
+	if not OS.is_debug_build():
+		return
+	
 	var label: Label = Label.new()
 	label.text = message;
 	label.set("theme_override_colors/font_color", color)
